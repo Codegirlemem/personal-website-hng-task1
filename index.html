@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Goals</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <header data-testid="header">
+        <h2 data-testid="slackDisplayName">Emem Eduoku</h2>
+        <nav>
+          <ul class="nav-list details">
+            <li id="my-goals-nav">My goals</li>
+
+            <li id="contact-nav">Contact me</li>
+
+            <li>
+              <a data-testid="keywordLink" href="https://keyword.dog"
+                >Keyword Link</a
+              >
+            </li>
+            <li>
+              <a data-testid="scrapeanywebLink" href="https://scrapeanyweb.site"
+                >Scrape any Website</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <span class="menu-icon">
+          <span id="open">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              fill="#fceff7"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+              ></path>
+            </svg>
+          </span>
+
+          <span id="close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              fill="#fceff7"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+              ></path>
+            </svg>
+          </span>
+        </span>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-text">
+            <h1 class="hero-heading">Welcome to my personal website!</h1>
+            <div class="hero-paragraph">
+              <p data-testid="introduction">
+                My name is Emem Eduoku, a Frontend Developer and an HNG 11
+                Intern.
+              </p>
+              <p>
+                If you want to know more about HNG, click on
+                <button>
+                  <a data-testid="hngLink" href="https://hng.tech/learn"
+                    >HNG link</a
+                  >
+                </button>
+                for more information.
+              </p>
+
+              <p>
+                Now let's go find out more about what i hope to achieve for the
+                next two years!.
+              </p>
+            </div>
+
+            <p></p>
+          </div>
+
+          <div class="slack-image-box">
+            <img
+              data-testid="slackProfilePicture"
+              src="slack-image.jpeg"
+              alt=" My slack profile picture"
+            />
+          </div>
+        </section>
+
+        <section data-testid="goal-section" class="goal-section">
+          <h2>My Goals For The Next Two Years</h2>
+
+          <p data-testid="purpose">
+            For the next two years I would like to become a well grounded and
+            confident developer and achieving the goals below will help my
+            growth!
+          </p>
+          <ul data-testid="goal-lists">
+            <li data-testid="goal">
+              Build a Strong Portfolio with not less than five projects
+            </li>
+            <li data-testid="goal">Build an e-commerce website</li>
+            <li data-testid="goal">Become an HNG 11 Finalist</li>
+            <li data-testid="goal">
+              Master CSS frameworks like Bootstrap, Tailwind CSS, SASS and SCSS
+            </li>
+            <li data-testid="goal">
+              Learn how to use regenerative AI in development
+            </li>
+
+            <li data-testid="goal">
+              Master advanced React concepts and have atleast two solid React
+              projects in my portfolio
+            </li>
+            <li data-testid="goal">
+              Learn and become proficient in building projects with Next JS
+            </li>
+            <li data-testid="goal">
+              Get an Interniship in a reputable organisation
+            </li>
+            <li data-testid="goal">
+              Contribute to atleast two open source project
+            </li>
+            <li data-testid="goal">
+              Learn UI/UX design to become capable of design and building
+              projects
+            </li>
+            <li data-testid="goal">
+              Learn how to use Wordpress, PHP and MySQL
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer data-testid="footer">
+        <div class="time">
+          <span id="currentDay" data-testid="curentDay"></span>
+          <span id="currentTime" data-testid="currentTimeUTC"></span>
+        </div>
+
+        <div class="contact">
+          <h3>Contact me</h3>
+          <p class="phone">
+            Phone:
+            <a data-testid="phone-number" href="tel:+23478016465045"
+              >+234701646553272</a
+            >
+          </p>
+          <div class="slack">
+            <button data-testid="slackName">Slack Name: Emem Eduoku</button>
+
+            <button data-testid="slackEmail">
+              Slack Email:
+              <a data-testid="slackEmail" href="mailto:eduokuemem@gmail.com"
+                >eduokuemem@gmail.com
+              </a>
+            </button>
+          </div>
+        </div>
+
+        <p>&copy; 2024 My Personal Website</p>
+      </footer>
+    </div>
+  </body>
+</html>
