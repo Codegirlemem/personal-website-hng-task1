@@ -13,9 +13,9 @@
         <h2 data-testid="slackDisplayName">Emem Eduoku</h2>
         <nav>
           <ul class="nav-list details">
-            <li id="my-goals-nav">My goals</li>
+            <li id="my-goals-nav" data-testid="my-goals-nav">My goals</li>
 
-            <li id="contact-nav">Contact me</li>
+            <li id="contact-nav" data-testid="my-goals-nav">Contact me</li>
 
             <li>
               <a data-testid="keywordLink" href="https://keyword.dog"
@@ -32,6 +32,7 @@
         <span class="menu-icon">
           <span id="open">
             <svg
+              data-testid="nav-open-icon"
               xmlns="http://www.w3.org/2000/svg"
               width="28"
               height="28"
@@ -46,6 +47,7 @@
 
           <span id="close">
             <svg
+              data-testid="nav-close-icon"
               xmlns="http://www.w3.org/2000/svg"
               width="28"
               height="28"
@@ -63,13 +65,15 @@
       <main>
         <section class="hero">
           <div class="hero-text">
-            <h1 class="hero-heading">Welcome to my personal website!</h1>
+            <h1 class="hero-heading" data-testid="hero-welcome-message">
+              Welcome to my personal website!
+            </h1>
             <div class="hero-paragraph">
-              <p data-testid="introduction">
+              <p data-testid="hero-intro1">
                 My name is Emem Eduoku, a Frontend Developer and an HNG 11
                 Intern.
               </p>
-              <p>
+              <p data-testid="hero-intro-hng">
                 If you want to know more about HNG, click on
                 <button>
                   <a data-testid="hngLink" href="https://hng.tech/learn"
@@ -79,7 +83,7 @@
                 for more information.
               </p>
 
-              <p>
+              <p data-testid="hero-intro2">
                 Now let's go find out more about what i hope to achieve for the
                 next two years!.
               </p>
@@ -97,45 +101,45 @@
           </div>
         </section>
 
-        <section data-testid="goal-section" class="goal-section">
-          <h2>My Goals For The Next Two Years</h2>
+        <section class="goal-section">
+          <h2 data-testid="goals-heading">My Goals For The Next Two Years</h2>
 
-          <p data-testid="purpose">
+          <p data-testid="goals-purpose">
             For the next two years I would like to become a well grounded and
             confident developer and achieving the goals below will help my
             growth!
           </p>
           <ul data-testid="goal-lists">
-            <li data-testid="goal">
+            <li data-testid="goal1">
               Build a Strong Portfolio with not less than five projects
             </li>
-            <li data-testid="goal">Build an e-commerce website</li>
-            <li data-testid="goal">Become an HNG 11 Finalist</li>
-            <li data-testid="goal">
+            <li data-testid="goal2">Build an e-commerce website</li>
+            <li data-testid="goal3">Become an HNG 11 Finalist</li>
+            <li data-testid="goal4">
               Master CSS frameworks like Bootstrap, Tailwind CSS, SASS and SCSS
             </li>
-            <li data-testid="goal">
+            <li data-testid="goal5">
               Learn how to use regenerative AI in development
             </li>
 
-            <li data-testid="goal">
+            <li data-testid="goal6">
               Master advanced React concepts and have atleast two solid React
               projects in my portfolio
             </li>
-            <li data-testid="goal">
+            <li data-testid="goal7">
               Learn and become proficient in building projects with Next JS
             </li>
-            <li data-testid="goal">
+            <li data-testid="goal8">
               Get an Interniship in a reputable organisation
             </li>
-            <li data-testid="goal">
+            <li data-testid="goal9">
               Contribute to atleast two open source project
             </li>
-            <li data-testid="goal">
+            <li data-testid="goal10">
               Learn UI/UX design to become capable of design and building
               projects
             </li>
-            <li data-testid="goal">
+            <li data-testid="goal11">
               Learn how to use Wordpress, PHP and MySQL
             </li>
           </ul>
@@ -148,8 +152,8 @@
         </div>
 
         <div class="contact">
-          <h3>Contact me</h3>
-          <p class="phone">
+          <h3 data-testid="contact-heading">Contact me</h3>
+          <p class="phone" data-testid="contact-phone">
             Phone:
             <a data-testid="phone-number" href="tel:+23478016465045"
               >+234701646553272</a
@@ -158,7 +162,7 @@
           <div class="slack">
             <button data-testid="slackName">Slack Name: Emem Eduoku</button>
 
-            <button data-testid="slackEmail">
+            <button data-testid="Email">
               Slack Email:
               <a data-testid="slackEmail" href="mailto:eduokuemem@gmail.com"
                 >eduokuemem@gmail.com
@@ -167,7 +171,7 @@
           </div>
         </div>
 
-        <p>&copy; 2024 My Personal Website</p>
+        <p data-testid="copyright">&copy; 2024 My Personal Website</p>
       </footer>
     </div>
   </body>
